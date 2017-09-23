@@ -5,7 +5,7 @@ Movie search
 
 ## Installation
 
-Go into the folder that has Podfile, execute command 'pod file', then open project and run App. 
+Go into the folder that has Podfile, execute command 'pod install', then open project and run App. 
 
 Target: iOS 10.0. 
 
