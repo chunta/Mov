@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="195" id="AB9-LG-S3b" customClass="MovieNailCell" customModule="MovieSearch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="703" height="231"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AB9-LG-S3b" id="aIu-SN-nA9">
+                <rect key="frame" x="0.0" y="0.0" width="703" height="230.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RrD-EK-FQQ">
+                        <rect key="frame" x="0.0" y="0.0" width="703" height="230.5"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aSf-I7-NYQ">
+                        <rect key="frame" x="8" y="8" width="144.5" height="214.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="aSf-I7-NYQ" secondAttribute="height" multiplier="185:274" id="6RG-Fq-jNd"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="gEg-qM-xMS">
+                        <rect key="frame" x="160.5" y="110.5" width="524.5" height="0.0"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LrJ-UG-CTX">
+                        <rect key="frame" x="674.5" y="201.5" width="10.5" height="21"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="gEg-qM-xMS" secondAttribute="trailing" constant="10" id="0ZP-U8-dq4"/>
+                    <constraint firstAttribute="trailing" secondItem="RrD-EK-FQQ" secondAttribute="trailing" id="2Qa-RQ-nR8"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="LrJ-UG-CTX" secondAttribute="trailing" constant="10" id="5ys-vW-ibh"/>
+                    <constraint firstItem="aSf-I7-NYQ" firstAttribute="top" secondItem="aIu-SN-nA9" secondAttribute="topMargin" id="OV0-ui-ir9"/>
+                    <constraint firstItem="gEg-qM-xMS" firstAttribute="leading" secondItem="aSf-I7-NYQ" secondAttribute="trailing" constant="8" id="V1Y-bl-kpY"/>
+                    <constraint firstItem="RrD-EK-FQQ" firstAttribute="top" secondItem="aIu-SN-nA9" secondAttribute="top" id="VAm-D3-fBN"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="aSf-I7-NYQ" secondAttribute="bottom" id="YCX-nw-2S1"/>
+                    <constraint firstAttribute="bottom" secondItem="RrD-EK-FQQ" secondAttribute="bottom" id="aO1-dJ-cXs"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="LrJ-UG-CTX" secondAttribute="bottom" id="lME-uA-0hf"/>
+                    <constraint firstItem="gEg-qM-xMS" firstAttribute="centerY" secondItem="aIu-SN-nA9" secondAttribute="centerY" constant="-5" id="r8e-sj-ptI"/>
+                    <constraint firstItem="RrD-EK-FQQ" firstAttribute="leading" secondItem="aIu-SN-nA9" secondAttribute="leading" id="xkY-YX-OwT"/>
+                    <constraint firstItem="aSf-I7-NYQ" firstAttribute="leading" secondItem="aIu-SN-nA9" secondAttribute="leadingMargin" id="y5i-Iq-VXJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backgropImgView" destination="RrD-EK-FQQ" id="Wme-Is-aTj"/>
+                <outlet property="popularityTxt" destination="LrJ-UG-CTX" id="bLF-XX-QLF"/>
+                <outlet property="posterImgView" destination="aSf-I7-NYQ" id="Ktg-9q-Og9"/>
+                <outlet property="titleTxt" destination="gEg-qM-xMS" id="4D5-OS-2ex"/>
+            </connections>
+            <point key="canvasLocation" x="-242.5" y="130.5"/>
+        </tableViewCell>
+    </objects>
+</document>
