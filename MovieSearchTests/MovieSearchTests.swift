@@ -85,7 +85,7 @@ class MovieSearchTests: XCTestCase
     
     func testDetailResult01()
     {
-        let expectationEmpty = expectation(description: "empty results")
+        let expectationEmpty = expectation(description: "Has results")
         MovieModel.queryMovieDetail(id: "328111") { (detail:MovieDetail) in
             XCTAssertNotNil(detail)
             XCTAssertTrue(detail.backdrop_path.characters.count>=0)
@@ -99,7 +99,7 @@ class MovieSearchTests: XCTestCase
     
     func testDetailResult02()
     {
-        let expectationEmpty = expectation(description: "empty results")
+        let expectationEmpty = expectation(description: "Has results")
         MovieModel.queryMovieDetail(id: "456538") { (detail:MovieDetail) in
             XCTAssertNotNil(detail)
             XCTAssertTrue(detail.backdrop_path.characters.count>=0)
